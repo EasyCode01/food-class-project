@@ -1,0 +1,35 @@
+BEM
+
+B - Object navbar, card, btn image, menu {
+    font-family
+    wisth
+    tac
+    po
+    mar, padd
+}
+
+E - object part of a block (inside of it) separate __
+The element name is separated from the block name with a double underscore
+
+M - appearance, state or behaviour of a block or element
+The modifier name is separated from the block or element name with double hypen
+BLock and element are the shape
+modifier are the styles
+
+====mixes 
+If we have an element that can be reused in any place again 
+that when you can use mixes e.g a button. white and black variation
+
+so for those buttons in the card, instead of making them a card__button we simply make them a block themselves
+because it can be used outside of the card itself
+
+in abutton for example you the padding can always be the same so it can be on the block
+but the margins can be different in many context so the class should be on the modifier btn
+
+button block
+card__button element this could take the margins because it's used on in the card
+card__button--primary this could take the bgc and colors
+
+Media queries 
+CSS Media Queries
+The @media rule, introduced in CSS2, made it possible to define different style rules for different media types.    
