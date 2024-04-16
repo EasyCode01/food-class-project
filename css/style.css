@@ -96,7 +96,7 @@ header {
 }
 
 .container {
-  width: 85%;
+  width: 80%;
   margin: 0 auto;
 }
 
@@ -246,5 +246,70 @@ header {
 @media (max-width: 500px) {
   .popular__dishes__cardwrapper {
     grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/* why choose */
+.why__choose {
+  padding: 20px 0;
+}
+
+.why__choose__titles {
+  text-align: center;
+}
+
+.why__choose__content {
+  margin-top: 40px;
+  display: flex;
+  gap: 10px;
+}
+
+.why__choose__content .right__content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.why__choose__content .services {
+  display: flex;
+  gap: 20px;
+}
+
+.why__choose__content .service__card {
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 4px;
+  background-color: var(--primary-color-2);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.why__choose__content .service__card span {
+  font-size: 24px;
+  color: var(--secondary-color-2);
+}
+
+.why__choose__content .service__card div {
+  color: var(--secondary-color-1);
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.why__choose__content button {
+  align-self: flex-start;
+}
+
+@media (max-width: 900px) {
+  .why__choose__content .services {
+    flex-wrap: wrap;
+  }
+
+  .why__choose__content {
+    flex-direction: column;
+  }
+
+  .why__choose__content .service__card {
+    padding: 15px 25px;
   }
 }
