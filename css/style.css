@@ -179,16 +179,16 @@ header {
   padding: 20px;
 }
 
-.popular__dishes__Card {
+.popular_dishes_Card {
   overflow: hidden;
 }
 
-.popular__dishes__Card .popular__dishes__icons {
+.popular_dishesCard .populardishes_icons {
   display: flex;
   justify-content: space-between;
 }
 
-.popular__dishes__Card .popular__dishes__icons span {
+.popular_dishesCard .populardishes_icons span {
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -203,37 +203,37 @@ header {
   cursor: pointer;
 }
 
-.popular__dishes__Card .popular__dishes__icons .left {
+.popular_dishesCard .populardishes_icons .left {
   transform: translateX(-60px);
 }
 
-.popular__dishes__Card .popular__dishes__icons .right {
+.popular_dishesCard .populardishes_icons .right {
   transform: translateX(60px);
 }
 
-.popular__dishes__Card:hover .left {
+.popular_dishes_Card:hover .left {
   transform: translateX(0);
 }
 
-.popular__dishes__Card:hover .right {
+.popular_dishes_Card:hover .right {
   transform: translateX(0);
 }
 
-.popular__Card__details {
+.popular_Card_details {
   text-align: center;
 }
 
-.popular__dishes__imgwrapper {
+.popular_dishes_imgwrapper {
   display: flex;
   justify-content: center;
 }
 
-.popular__dishes__img {
+.popular_dishes_img {
   width: 50%;
   object-fit: cover;
 }
 
-.star__icon__wrapper {
+.star_icon_wrapper {
   margin: 8px 0;
 }
 
@@ -285,12 +285,12 @@ header {
   gap: 6px;
 }
 
-.why__choose__content .service__card span {
+.why__choose__content .service_card span {
   font-size: 24px;
   color: var(--secondary-color-2);
 }
 
-.why__choose__content .service__card div {
+.why__choose__content .service_card div {
   color: var(--secondary-color-1);
   font-size: 24px;
   font-weight: 400;
@@ -309,7 +309,68 @@ header {
     flex-direction: column;
   }
 
-  .why__choose__content .service__card {
+  .why__choose__content .service_card {
     padding: 15px 25px;
   }
+}
+
+/* Customer review styles */
+.customer__review {
+  background-color: var(--primary-color);
+  padding: 30px 0;
+  width: 100%;
+}
+
+.customer__review .titles {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.customer__review .slider__wrapper {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+}
+
+.slider__wrapper .customer__card {
+  width: 280px !important;
+  border: 1px solid #ccc;
+  position: relative;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.slider__wrapper .card__head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.slider__wrapper .person__details {
+  display: flex;
+  gap: 10px;
+}
+
+.slider__wrapper .card__image {
+  width: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.card__head .bi__icon {
+  display: flex;
+  align-items: flex-start;
+  transform: translateY(-25px);
+  transform: rotate(180deg);
+  position: absolute;
+  right: 10px;
+  top: 6px;
+}
+
+.card__head .bi-quote {
+  font-size: 50px;
+  color: var(--primary-color-2);
+}
+
+.slider__wrapper .card__body {
+  margin-top: 10px;
 }
