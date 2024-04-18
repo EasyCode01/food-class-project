@@ -11,26 +11,49 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
+    <!-- Navbar -->
     <header>
       <nav class="navbar container">
         <div class="navbar__logo">
           <span>RESTO</span>
         </div>
         <ul class="navbar__links">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#home">Home</a></li>
+          <li><a class="active" href="#home">Home</a></li>
+          <li><a href="#home">Dishes</a></li>
+          <li><a href="#home">About</a></li>
+          <li><a href="#home">Menu</a></li>
+          <li><a href="#home">Review</a></li>
+          <li><a href="#home">Order</a></li>
         </ul>
         <div class="navbar__icons">
-          <span>😎</span>
-          <span>😎</span>
-          <span>😎</span>
+          <span class="menu_icon"><i class="bi bi-list"></i></span>
+          <span><i class="bi bi-search"></i></span>
+          <span><i class="bi bi-balloon-heart-fill"></i></span>
+          <span><i class="bi bi-cart-fill"></i></span>
         </div>
       </nav>
     </header>
+
+    <!-- Mobile menu -->
+    <div class="mobile__menu">
+      <nav class="mobile__nav container">
+        <span>
+          <a class="active-menu" href="#">Home</a>
+        </span>
+        <span>
+          <a href="#">Home</a>
+        </span>
+        <span>
+          <a href="#">Home</a>
+        </span>
+        <span>
+          <a href="#">Home</a>
+        </span>
+        <span>
+          <a href="#">Home</a>
+        </span>
+      </nav>
+    </div>
 
     <!-- Hero section -->
     <section id="hero" class="hero">
@@ -543,6 +566,99 @@
             </swiper-slide>
           </swiper-container>
         </div>
+      </div>
+    </section>
+
+    <!-- order form -->
+    <section class="order__form">
+      <div class="wrapper container">
+        <div class="wrapper__head">
+          <p class="label-text">Order now</p>
+          <h3 class="subtitle-text">Free and fast Delivery</h3>
+        </div>
+        <form class="wrapper__body">
+          <div class="form__inputs">
+            <div class="left">
+              <div class="text__field">
+                <label for="">Your name</label>
+                <input
+                  type="text"
+                  name=""
+                  id=""
+                  placeholder="Enter your name"
+                />
+              </div>
+              <div class="text__field">
+                <label for="">Your name</label>
+                <input
+                  type="text"
+                  name=""
+                  id=""
+                  placeholder="Enter your name"
+                />
+              </div>
+              <div class="text__field">
+                <label for="">Your name</label>
+                <input
+                  type="text"
+                  name=""
+                  id=""
+                  placeholder="Enter your name"
+                />
+              </div>
+              <div class="text__field">
+                <label for="">Your message</label>
+                <textarea
+                  placeholder="Your message"
+                  name=""
+                  id=""
+                  cols="30"
+                  rows="10"
+                ></textarea>
+              </div>
+            </div>
+            <div class="right">
+              <div class="text__field">
+                <label for="">Your name</label>
+                <input
+                  type="text"
+                  name=""
+                  id=""
+                  placeholder="Enter your name"
+                />
+              </div>
+              <div class="text__field">
+                <label for="">Your name</label>
+                <input
+                  type="text"
+                  name=""
+                  id=""
+                  placeholder="Enter your name"
+                />
+              </div>
+              <div class="text__field">
+                <label for="">Your name</label>
+                <input
+                  type="text"
+                  name=""
+                  id=""
+                  placeholder="Enter your name"
+                />
+              </div>
+              <div class="text__field">
+                <label for="">Your message</label>
+                <textarea
+                  placeholder="Your message"
+                  name=""
+                  id=""
+                  cols="30"
+                  rows="10"
+                ></textarea>
+              </div>
+            </div>
+          </div>
+          <button class="btn btn--primary">Order now</button>
+        </form>
       </div>
     </section>
 
