@@ -663,5 +663,13 @@
     </section>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <script>
+      let menuIcon = document.querySelector(".menu_icon");
+      let mobileMenu = document.querySelector(".mobile__menu");
+
+      menuIcon.addEventListener("click", () => {
+        mobileMenu.classList.toggle("show__menu");
+      });
+    </script>
   </body>
 </html>

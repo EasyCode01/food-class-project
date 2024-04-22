@@ -163,6 +163,7 @@ header {
 
 .bi {
   transition: all 200ms ease-in-out;
+  font-size: 20px;
 }
 
 .navbar__icons span:hover .bi {
@@ -176,12 +177,19 @@ header {
 /* mobile menu */
 .mobile__menu {
   width: 100%;
-  background-color: var(--primary-color);
+  /* background-color: var(--primary-color); */
   position: fixed;
   top: 60px;
   left: 0;
   z-index: 10;
-  display: none;
+  background-color: rgba(0, 0, 0, 0.656);
+  height: 0;
+  overflow: hidden;
+  transition: all 500ms ease;
+}
+
+.show__menu {
+  height: calc(100vh - 60px);
 }
 
 .mobile__nav {
